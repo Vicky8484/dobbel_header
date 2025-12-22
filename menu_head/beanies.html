@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beanies</title>
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="head.css">
+
+</head>
+
+<body id="head_body">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./beanies_img/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="head.html">Head</a></li>
+                <li><a href="shoulders.html">Shoulders</a></li>
+                <li><a href="knees.html">Knees</a></li>
+                <li><a href="toes.html">Toes</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <header class="header2">
+        <nav>
+            <ul class="menu_2">
+                <li><a href="menu_head/beanies.html">Beanies</a></li>
+                <li><a href="menu_head/ear_muffs.html">Ear muffs</a></li>
+                <li><a href="menu_head/hats.html">Hats</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="beanie-main">
+            <div class="beanie-img">
+                <button id="btn_open"><img src="./beanies_img/beanie1.webp" alt="hue billede"></button>
+                <dialog id="buy">
+                    <form method="dialog" class="buy">
+                        <div class="beanie-img-modal">
+                            <img src="./beanies_img/beanie1.webp" alt="hue billede">
+                        </div>
+                        <div>
+                            <p>Køb den!!!!</p>
+                            <button id="btn_close">Luk artikel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+            <div class="beanie-img">
+                <button id="btn_open2"><img src="./beanies_img/beanie2.webp" alt="hue billede"></button>
+                <dialog id="buy2">
+                    <form method="dialog" class="buy">
+                        <div class="beanie-img-modal">
+                            <img src="./beanies_img/beanie2.webp" alt="hue billede">
+                        </div>
+                        <div>
+                            <p>Køb den!!!!</p>
+                            <button id="btn_close2">Luk artikel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+            <div class="beanie-img">
+                <button id="btn_open3"><img src="./beanies_img/beanie5.webp" alt="hue billede"></button>
+                <dialog id="buy3">
+                    <form method="dialog" class="buy">
+                        <div class="beanie-img-modal">
+                            <img src="./beanies_img/beanie5.webp" alt="hue billede">
+                        </div>
+                        <div>
+                            <p>Køb den!!!!</p>
+                            <button id="btn_close3">Luk artikel</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+            <div class="beanie-img">
+                <button><img src="./beanies_img/beanie3.webp" alt="hue billede"></button>
+            </div>
+            <div class="beanie-img">
+                <button><img src="./beanies_img/beanie4.webp" alt="hue billede"></button>
+            </div>
+        </div>
+    </main>
+    <script src="./dialog.js"></script>
+</body>

@@ -1,0 +1,196 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/**********************************************/
+/************ menu **********/
+header {
+  /*hovedmenu alle sider*/
+  /*position: sticky;*/
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: solid black;
+  border-top: solid black;
+  background-color: rgb(232, 232, 224);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+
+.header2 {
+  /*undermenu clothes side*/
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(248, 248, 245);
+  border-top: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  /*hovedmenu alle sider*/
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.menu {
+  /*hovedmenu alle sider*/
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_2 {
+  /*undermenu clothes side*/
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  /*hovedmenu alle sider*/
+  margin-right: 20px;
+}
+
+.menu_2 li {
+  /*undermenu clothes side*/
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  /*hovedmenu alle sider*/
+  margin-right: 0;
+}
+
+.menu_2 li:last-child {
+  /*undermenu clothes side*/
+  margin-right: 0;
+}
+
+.menu a {
+  /*hovedmenu alle sider*/
+  display: block;
+  padding: 10px;
+  color: rgb(209, 94, 117);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu_2 a {
+  /*undermenu clothes side*/
+  display: block;
+  padding: 10px;
+  color: rgb(209, 94, 117);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  /*hovedmenu alle sider*/
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu_2 a:hover {
+  /*undermenu clothes side*/
+  color: #333333;
+  text-decoration: none;
+}
+
+/*burger*/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/*******main baggrundsfarver*****/
+.background-color_1 {
+  background-color: rgb(211, 211, 198);
+}
+.background-color_2 {
+  background-color: rgb(232, 232, 224);
+}
+.background-color_3 {
+  background-color: rgb(211, 211, 198);
+}
+/***font og farve*****/
+h1 {
+  color: rgb(200, 88, 110);
+}
+h2 {
+  color: rgb(200, 88, 110);
+}

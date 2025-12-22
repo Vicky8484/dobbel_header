@@ -1,0 +1,66 @@
+/********************************ALLE HEAD SIDER DESKTOP FORMAT******************************/
+#head_body {
+  background-color: rgb(232, 232, 224);
+}
+@media screen and (min-width: 800px) {
+  /***HEAD FORSIDE***/
+  /***BEANIE FORSIDE***/
+  /*grid på siden*/
+  #beanie-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem;
+  }
+  /*billede styling*/
+  .beanie-img {
+    padding: 0.5rem;
+  }
+
+  .beanie-img:hover {
+    padding: 0.7rem;
+    filter: brightness(50%);
+  }
+
+  /*modal styling 1*/
+  #buy {
+    border: none;
+    box-shadow: 5px 6px 10px black;
+    /*width: 800px;
+    height: 500px;*/
+    max-height: 90vh;
+    max-width: 120ch;
+    width: 90vw;
+    margin-top: 2rem;
+    margin-left: 18rem;
+    margin-bottom: 6rem;
+  }
+
+  .buy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*billede styling i modal*/
+  .beanie-img-modal {
+    padding: 1rem;
+  }
+
+  /*baggrunden*/
+  ::backdrop {
+    backdrop-filter: blur(5px);
+  }
+
+  /*modal styling 2*/
+  #buy2 {
+    border: none;
+    box-shadow: 5px 6px 10px black;
+    /*width: 800px;
+    height: 500px;*/
+    max-height: 90vh;
+    max-width: 120ch;
+    width: 90vw;
+    margin-top: 2rem;
+    margin-left: 18rem;
+    margin-bottom: 6rem;
+  }
+}

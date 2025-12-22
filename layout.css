@@ -1,0 +1,242 @@
+/*******************************DESKTOP MEDIA QUERY********************************/
+@media screen and (min-width: 800px) {
+  /*tekst*/
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: rgb(200, 88, 110);
+  }
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: rgb(200, 88, 110);
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: rgb(200, 88, 110);
+  }
+  p {
+    font-size: 1.2rem;
+    color: rgb(92, 51, 59);
+  }
+  /****FORSIDE****/
+  /*hero*/
+  .index_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    text-align: center;
+    padding: 3rem;
+  }
+  .blomst {
+    width: 100px;
+    height: auto;
+    display: block;
+  }
+  .none {
+    display: none;
+  }
+  /*commot for andre sider*/
+  .index_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .collage {
+    padding: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .collage:hover {
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    filter: saturate(30%);
+  }
+  /*****about HSKT*****/
+  .index_3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+  }
+  .about_hskt {
+    padding: 3rem;
+  }
+  /*slideshow*/
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    /*position: relative; gør at slideshowet overflower på header når man scroller*/
+    margin: auto;
+    padding: 2rem; /*DET ER DETTE DER GØR MAN SKAL SCROLLE SIDE TIL SIDE PÅ FORSIDEN*/
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    padding-bottom: 2rem;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /*sælg, organisationer, ansøg*/
+  .index_4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .baggrund_salg {
+    background-image: url(./img/collage1.png);
+  }
+  .baggrund_organisation {
+    background-image: url(./img/collage1.png);
+  }
+  .baggrund_apply {
+    background-image: url(./img/collage1.png);
+  }
+  .index4_none {
+    display: none;
+  }
+  .index4_none:hover {
+    display: block;
+  }
+}
+
+/*******************************MOBILSITE MEDIA QUERY********************************/
+@media screen and (max-width: 800px) {
+  /*tekst general*/
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(200, 88, 110);
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(200, 88, 110);
+  }
+  h3 {
+    font-size: 1rem;
+    color: rgb(200, 88, 110);
+  }
+  p {
+    font-size: 1rem;
+    color: rgb(92, 51, 59);
+  }
+  /****FORSIDE****/
+  /*hero*/
+  .index_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    text-align: center;
+    padding: 3rem;
+  }
+  /*gør blomster væk i mobil*/
+  .blomst {
+    width: 100px;
+    height: auto;
+    display: none;
+  }
+
+  /*kollage-billederne*/
+  .collage {
+    padding: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: 10%;
+  }
+  .collage:hover {
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    filter: saturate(30%);
+  }
+  /*about HSKT*/
+  .about_hskt {
+    padding: 3rem;
+  }
+  /*sælg, organisationer, ansøg*/
+  .index_4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .baggrund_salg {
+    background-image: url(./img/collage1.png);
+  }
+  .baggrund_organisation {
+    background-image: url(./img/collage1.png);
+  }
+  .baggrund_apply {
+    background-image: url(./img/collage1.png);
+  }
+  .index4_none {
+    display: none;
+  }
+  .index4_none:hover {
+    display: block;
+  }
+}

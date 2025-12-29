@@ -57,6 +57,7 @@ main {
     background-color: #e8e7da;
     border: 2px solid #9d9b80;
     font-size: 3rem;
+    margin-top: 4rem;
   }
 
   .button:hover {
@@ -73,6 +74,11 @@ main {
 
   .popover-tekst {
     color: #616053;
+    padding-top: 3rem;
+  }
+
+  .slut-tekst {
+    padding-top: 3rem;
   }
 
   /*popup modaler, anden og tredje modal*/
@@ -126,12 +132,17 @@ main {
     margin: 3rem auto;
   }
 
-  /*animation med transitions på anden og tredje modaler*/
+  .del2 {
+    padding-top: 1rem;
+  }
+
   [popover] {
     opacity: 0;
   }
 
   [popover]:popover-open {
     opacity: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

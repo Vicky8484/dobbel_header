@@ -20,11 +20,11 @@
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="head.html">Head</a></li>
-                <li><a href="shoulders.html">Shoulders</a></li>
-                <li><a href="knees.html">Knees</a></li>
-                <li><a href="toes.html">Toes</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Head</a></li>
+                <li><a href="">Shoulders</a></li>
+                <li><a href="">Knees</a></li>
+                <li><a href="">Toes</a></li>
             </ul>
             <button class="burger">
                 <span class="line"></span>
@@ -36,63 +36,110 @@
     <header class="header2">
         <nav>
             <ul class="menu_2">
-                <li><a href="menu_head/beanies.html">Beanies</a></li>
-                <li><a href="menu_head/ear_muffs.html">Ear muffs</a></li>
-                <li><a href="menu_head/hats.html">Hats</a></li>
+                <li><a href="">Beanies</a></li>
+                <li><a href="">Ear muffs</a></li>
+                <li><a href="">Hats</a></li>
             </ul>
         </nav>
     </header>
+    <div class="nothing">
+        <h2>Intet at se i mobil format desværre. Det her er bare en test hjemmeside, ikke et fuldt fungerende,
+            responsivt website. HA! Du troede lige</h2>
+    </div>
     <main>
         <div id="beanie-main">
             <div class="beanie-img">
-                <button id="btn_open"><img src="./beanies_img/beanie1.webp" alt="hue billede"></button>
-                <dialog id="buy">
-                    <form method="dialog" class="buy">
-                        <div class="beanie-img-modal">
-                            <img src="./beanies_img/beanie1.webp" alt="hue billede">
-                        </div>
-                        <div>
-                            <p>Køb den!!!!</p>
-                            <button id="btn_close">Luk artikel</button>
-                        </div>
-                    </form>
-                </dialog>
+                <button popovertarget="popup" class="cta_btn" id="btn_open"><img src="./beanies_img/beanie1.webp"
+                        alt="hue billede"></button>
+
+                <!--Popover-->
+                <div popover id="popup">
+                    <div>
+                        <img class="popover-img" src="./beanies_img/beanie1.webp" alt="hue billede">
+                    </div>
+                    <div>
+                        <h2 class="popover-h2">Pink strikhue til salg</h2>
+                        <h3>Kun 20kr! (2 huer for 30kr)</h3>
+                        <p class="popover-tekst">Reservér den og hent den i butikken!</p>
+                        <button id="kurv" class="button">🛒</button>
+                        <button id="like" class="button">❤️</button>
+                        <button popovertarget="popup" id="close_btn" class="button">❌</button>
+                    </div>
+                </div>
             </div>
 
             <div class="beanie-img">
-                <button id="btn_open2"><img src="./beanies_img/beanie2.webp" alt="hue billede"></button>
-                <dialog id="buy2">
-                    <form method="dialog" class="buy">
-                        <div class="beanie-img-modal">
-                            <img src="./beanies_img/beanie2.webp" alt="hue billede">
-                        </div>
-                        <div>
-                            <p>Køb den!!!!</p>
-                            <button id="btn_close2">Luk artikel</button>
-                        </div>
-                    </form>
-                </dialog>
+                <button popovertarget="popup2" class="cta_btn" id="btn_open2"><img src="./beanies_img/beanie2.webp"
+                        alt="hue billede"></button>
+                <!--Popover-->
+                <div popover id="popup2">
+                    <div>
+                        <img class="popover-img" src="./beanies_img/beanie2.webp" alt="hue billede">
+                    </div>
+                    <div>
+                        <h2 class="popover-h2">Grøn/pink strikhue til salg</h2>
+                        <h3>Kun 20kr! (2 huer for 30kr)</h3>
+                        <p class="popover-tekst">Reservér den og hent den i butikken!</p>
+                        <button class="button">🛒</button>
+                        <button class="button">❤️</button>
+                        <button popovertarget="popup2" id="close_btn3" class="button">❌</button>
+                    </div>
+                </div>
             </div>
 
             <div class="beanie-img">
-                <button id="btn_open3"><img src="./beanies_img/beanie5.webp" alt="hue billede"></button>
-                <dialog id="buy3">
-                    <form method="dialog" class="buy">
-                        <div class="beanie-img-modal">
-                            <img src="./beanies_img/beanie5.webp" alt="hue billede">
-                        </div>
-                        <div>
-                            <p>Køb den!!!!</p>
-                            <button id="btn_close3">Luk artikel</button>
-                        </div>
-                    </form>
-                </dialog>
+                <button popovertarget="popup3" class="cta_btn" id="btn_open3"><img src="./beanies_img/beanie5.webp"
+                        alt="hue billede"></button>
+                <!--Popover-->
+                <div popover id="popup3">
+                    <div>
+                        <img class="popover-img" src="./beanies_img/beanie5.webp" alt="hue billede">
+                    </div>
+                    <div>
+                        <h2 class="popover-h2">Gul strikhue til salg</h2>
+                        <h3>Kun 20kr! (2 huer for 30kr)</h3>
+                        <p class="popover-tekst">Reservér den og hent den i butikken!</p>
+                        <button class="button">🛒</button>
+                        <button class="button">❤️</button>
+                        <button popovertarget="popup3" id="close_btn2" class="button">❌</button>
+                    </div>
+                </div>
             </div>
             <div class="beanie-img">
-                <button><img src="./beanies_img/beanie3.webp" alt="hue billede"></button>
+                <button popovertarget="popup4" class="cta_btn" id="btn_open4"><img src="./beanies_img/beanie3.webp"
+                        alt="hue billede"></button>
+                <!--Popover-->
+                <div popover id="popup4">
+                    <div>
+                        <img class="popover-img" src="./beanies_img/beanie3.webp" alt="hue billede">
+                    </div>
+                    <div>
+                        <h2 class="popover-h2">Hotpink strikhue til salg</h2>
+                        <h3>Kun 20kr! (2 huer for 30kr)</h3>
+                        <p class="popover-tekst">Reservér den og hent den i butikken!</p>
+                        <button class="button">🛒</button>
+                        <button class="button">❤️</button>
+                        <button popovertarget="popup4" id="close_btn4" class="button">❌</button>
+                    </div>
+                </div>
             </div>
             <div class="beanie-img">
-                <button><img src="./beanies_img/beanie4.webp" alt="hue billede"></button>
+                <button popovertarget="popup5" class="cta_btn" id="btn_open5"><img src="./beanies_img/beanie4.webp"
+                        alt="hue billede"></button>
+                <!--Popover-->
+                <div popover id="popup5">
+                    <div>
+                        <img class="popover-img" src="./beanies_img/beanie4.webp" alt="hue billede">
+                    </div>
+                    <div>
+                        <h2 class="popover-h2">Brun strikhue til salg</h2>
+                        <h3>Kun 20kr! (2 huer for 30kr)</h3>
+                        <p class="popover-tekst">Reservér den og hent den i butikken!</p>
+                        <button class="button">🛒</button>
+                        <button class="button">❤️</button>
+                        <button popovertarget="popup5" id="close_btn5" class="button">❌</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

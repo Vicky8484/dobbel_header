@@ -2,7 +2,26 @@
 #head_body {
   background-color: rgb(232, 232, 224);
 }
+
+.nothing {
+  display: block;
+  padding: 1rem;
+}
+
+main {
+  display: none;
+}
+
+/*desktop*/
 @media screen and (min-width: 800px) {
+  .nothing {
+    display: none;
+  }
+
+  main {
+    display: block;
+  }
+
   /***HEAD FORSIDE***/
   /***BEANIE FORSIDE***/
   /*grid på siden*/
@@ -21,46 +40,98 @@
     filter: brightness(50%);
   }
 
-  /*modal styling 1*/
-  #buy {
-    border: none;
-    box-shadow: 5px 6px 10px black;
-    /*width: 800px;
-    height: 500px;*/
-    max-height: 90vh;
-    max-width: 120ch;
-    width: 90vw;
-    margin-top: 2rem;
-    margin-left: 18rem;
-    margin-bottom: 6rem;
-  }
-
-  .buy {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /*billede styling i modal*/
-  .beanie-img-modal {
-    padding: 1rem;
-  }
-
   /*baggrunden*/
   ::backdrop {
     backdrop-filter: blur(5px);
   }
 
-  /*modal styling 2*/
-  #buy2 {
-    border: none;
-    box-shadow: 5px 6px 10px black;
-    /*width: 800px;
-    height: 500px;*/
-    max-height: 90vh;
+  .popover-img {
+    width: 450px;
+    padding: 1rem;
+  }
+
+  .button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: #e8e7da;
+    border: 2px solid #9d9b80;
+    font-size: 3rem;
+  }
+
+  .button:hover {
+    background-color: #d9d8c2;
+  }
+
+  .button:focus {
+    background-color: #e7d6e9;
+  }
+
+  .popover-h2 {
+    font-size: 3rem;
+  }
+
+  .popover-tekst {
+    color: #616053;
+  }
+
+  /*popup modaler, anden og tredje modal*/
+  #popup {
+    background-color: #f5f4eb;
+    color: black;
+    height: 600px;
     max-width: 120ch;
-    width: 90vw;
-    margin-top: 2rem;
-    margin-left: 18rem;
-    margin-bottom: 6rem;
+    width: 180vw;
+    border-color: light-dark(#513d34, #2a221e);
+    margin: 3rem auto;
+  }
+
+  #popup2 {
+    background-color: #f5f4eb;
+    color: black;
+    height: 600px;
+    max-width: 120ch;
+    width: 180vw;
+    border-color: light-dark(#513d34, #2a221e);
+    margin: 3rem auto;
+  }
+
+  #popup3 {
+    background-color: #f5f4eb;
+    color: black;
+    height: 600px;
+    max-width: 120ch;
+    width: 180vw;
+    border-color: light-dark(#513d34, #2a221e);
+    margin: 3rem auto;
+  }
+
+  #popup4 {
+    background-color: #f5f4eb;
+    color: black;
+    height: 600px;
+    max-width: 120ch;
+    width: 180vw;
+    border-color: light-dark(#513d34, #2a221e);
+    margin: 3rem auto;
+  }
+
+  #popup5 {
+    background-color: #f5f4eb;
+    color: black;
+    height: 600px;
+    max-width: 120ch;
+    width: 180vw;
+    border-color: light-dark(#513d34, #2a221e);
+    margin: 3rem auto;
+  }
+
+  /*animation med transitions på anden og tredje modaler*/
+  [popover] {
+    opacity: 0;
+  }
+
+  [popover]:popover-open {
+    opacity: 1;
   }
 }

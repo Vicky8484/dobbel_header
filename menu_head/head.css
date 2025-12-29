@@ -70,6 +70,7 @@ main {
 
   .popover-h2 {
     font-size: 3rem;
+    padding-right: 2rem;
   }
 
   .popover-tekst {
@@ -79,6 +80,7 @@ main {
 
   .slut-tekst {
     padding-top: 3rem;
+    padding-right: 2rem;
   }
 
   /*popup modaler, anden og tredje modal*/
